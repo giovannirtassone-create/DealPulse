@@ -19,7 +19,7 @@ body{
 #app{max-width:var(--maxw);margin:28px auto;padding:0 16px;}
 .header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e6eef6}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px;width:auto;border-radius:6px;object-fit:contain}
+.brand img{height:60px;width:auto;border-radius:6px;object-fit:contain}
 .brand h1{margin:0;font-size:20px}
 .nav{display:flex;gap:12px;align-items:center}
 .button, .link {
