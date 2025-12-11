@@ -21,8 +21,6 @@ function percentOff(original, current){
 function renderNav(){
   const user = getUser();
   nav.innerHTML = '';
-  const aAdd = el('a',{ href:'#/add', className:'btn-ghost', text:'Add Product' });
-  nav.appendChild(aAdd);
   if(user){
     const span = el('span',{ text: user.email, style:'margin-left:8px;color:#374151' });
     const logout = el('button',{ className:'btn-ghost', text:'Log out' });
