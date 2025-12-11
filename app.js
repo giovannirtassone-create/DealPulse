@@ -254,6 +254,6 @@ window.addEventListener('hashchange', route);
 window.addEventListener('load', () => {
   // set a default placeholder if logo missing
   const logo = document.getElementById('logo');
-  if(logo && logo.src.endsWith('assets/logo.png')) { /* user should add their own */ }
+  if(logo && logo.src.endsWith('logo.png')) { /* user should add their own */ }
   route();
 });
