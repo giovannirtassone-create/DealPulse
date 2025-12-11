@@ -1,12 +1,46 @@
 <!doctype html>
 <html lang="en">
-  
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DealPulse</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+  
+  <script>
+  function addProduct({ image, link, name, price, percentOff }) {
+    const productHTML = `
+      <div class="product-card" style="
+        width:250px;
+        border:1px solid #ddd;
+        padding:15px;
+        border-radius:10px;
+        margin:10px;
+        font-family:sans-serif;
+      ">
+        <img src="${image}" alt="${name}" style="width:100%; border-radius:8px;" />
+        <h3 style="font-size:18px; margin:10px 0;">${name}</h3>
+        <p style="margin:5px 0; font-size:16px;">
+          <strong>$${price}</strong>
+          <span style="color:green; margin-left:6px;">${percentOff}% off</span>
+        </p>
+        <a href="${link}" target="_blank" style="
+          display:block;
+          background:#ff9900;
+          color:white;
+          padding:10px;
+          text-align:center;
+          border-radius:6px;
+          text-decoration:none;
+          font-weight:bold;
+        ">View on Amazon</a>
+      </div>
+    `;
+
+    document.getElementById("products").innerHTML += productHTML;
+  }
+</script>
+
 <body>
   <div id="app">
     <header class="header">
@@ -16,7 +50,20 @@
         </a>
         <h1>DealPulse</h1>
 
-        <div id="products"></div>
+        <div id="products">
+             <script>
+                addProduct({
+                  image: "https://m.media-amazon.com/images/I/7192Qca-fUL._AC_SL1500_.jpg",
+                  link: "https://a.co/d/2NI5q6B",
+                  name: "Bose Bluetooth Speaker ",
+                  price: "$199.00",
+                  percentOff: 20
+                });
+              </script>
+
+
+          
+        </div>
 
 
       </div>
