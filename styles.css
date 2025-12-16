@@ -49,16 +49,7 @@ body{
 @media (max-width:600px){ .cols-3,.cols-2{grid-template-columns:1fr} .brand h1{display:none} }
 
 products{margin-left:300px;
+          justify-items: center; /* Horizontally center items within their grid cells */
+          align-items: center; /* Vertically center items within their grid cells */
         }
 
-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal-width columns */
-    justify-items: center; /* Horizontally center items within their grid cells */
-    align-items: center; /* Vertically center items within their grid cells */
-    border: 1px solid black;
-  }
-  .grid-container > div {
-    padding: 10px;
-    border: 1px solid grey;
-  }
