@@ -48,8 +48,7 @@ body{
 @media (max-width:900px){ .cols-3{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:600px){ .cols-3,.cols-2{grid-template-columns:1fr} .brand h1{display:none} }
 
-products{margin-left:300px;
-          justify-items: center; /* Horizontally center items within their grid cells */
+container{
           align-items: center; /* Vertically center items within their grid cells */
         }
 
