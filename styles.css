@@ -56,3 +56,10 @@ body{
   justify-content: center;  /* center the row */
   padding: 20px;
 }
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
