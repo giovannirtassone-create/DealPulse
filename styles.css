@@ -73,7 +73,7 @@ body{
 /* Phones */
 @media (max-width: 600px) {
   #products {
-    grid-template-columns: repeat(3, 1fr); /* still 3 per row */
+    grid-template-columns: repeat(2, 1fr); /* still 3 per row */
   }
 
   .product-card {
