@@ -50,5 +50,6 @@ body{
 
 container{
           align-items: center; /* Vertically center items within their grid cells */
+          .product{align-items: center; 
         }
 
