@@ -51,15 +51,14 @@ body{
 products{margin-left:300px;
         }
 
-container {
-    display: flex;
-    justify-content: center; /* Horizontally center items */
-    align-items: center; /* Vertically center items */
-    height: 100px; /* Example height for visual alignment */
+grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal-width columns */
+    justify-items: center; /* Horizontally center items within their grid cells */
+    align-items: center; /* Vertically center items within their grid cells */
     border: 1px solid black;
   }
-   container > div {
+  .grid-container > div {
     padding: 10px;
     border: 1px solid grey;
-    margin: 5px;
   }
