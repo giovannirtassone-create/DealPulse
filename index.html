@@ -41,18 +41,6 @@
     `;
 
     document.getElementById("products").innerHTML += productHTML;
-
-  <script>
-    function searchProducts() {
-        const input = document.getElementById("searchInput").value.toLowerCase();
-        const products = document.querySelectorAll(".product-card");
-    
-        products.forEach(product => {
-          const name = product.querySelector("h3").textContent.toLowerCase();
-          product.style.display = name.includes(input) ? "flex" : "none";
-        });
-      }
-  </script>
   }
 </script>
 
