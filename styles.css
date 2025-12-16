@@ -80,30 +80,3 @@ body{
   box-shadow: 0 0 0 2px rgba(0,119,255,0.15);
 }
 
-/* Swipeable row wrapper */
-.product-row {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px;
-}
-
-/* Horizontal scrolling on mobile */
-@media (max-width: 768px) {
-  #products {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 14px;
-    padding: 10px;
-  }
-
-  .product-card {
-    flex: 0 0 75%;
-    max-width: 75%;
-    scroll-snap-align: start;
-  }
-
-  .product-row {
-    scroll-snap-type: x mandatory;
-  }
-}
-
