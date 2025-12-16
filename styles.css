@@ -62,3 +62,21 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 14px;
+  margin: 16px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(0,119,255,0.15);
+}
+
