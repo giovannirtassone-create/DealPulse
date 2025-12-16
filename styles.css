@@ -77,9 +77,9 @@ body{
   }
 
   .product-card {
-    width: 95%;
+    width: 85%;
     margin: 0;
-    padding: 2px;
+    padding: 0px;
   }
 
   .product-card img {
@@ -87,16 +87,16 @@ body{
   }
 
   .product-card h3 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .price {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .product-card a {
-    font-size: 11px;
-    padding: 6px;
+    font-size: 9px;
+    padding: 2px;
   }
 }
 
