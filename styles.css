@@ -51,14 +51,14 @@ body{
 products{margin-left:300px;
         }
 
-flex-container {
+container {
     display: flex;
     justify-content: center; /* Horizontally center items */
     align-items: center; /* Vertically center items */
     height: 100px; /* Example height for visual alignment */
     border: 1px solid black;
   }
-  .flex-container > div {
+   container > div {
     padding: 10px;
     border: 1px solid grey;
     margin: 5px;
